@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>CBojar.net</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Sans:200,400,700" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="alternate" type="application/rss+xml" title="CBojar.net Updates (RSS)" href="https://cbojar.net/feed.rss" />
+		<link rel="alternate" type="application/atom+xml" title="CBojar.net Updates (Atom)" href="https://cbojar.net/feed.atom" />
+	</head>
+	<body>
+		<div id="flag">
+			<header>
+				<img id="cityscape" src="/images/cityscape.png" alt="" />
+				<div class="white-block">
+					<h1><img id="title-image" src="/images/title.svg" alt="CBojar.net" /></h1>
+					<nav>
+						<a href="#about">About</a>
+						<a href="#updates">Updates</a>
+						<a href="#portfolio">Portfolio</a>
+						<!--a href="#projects">Projects</a-->
+						<a rel="me" href="http://blog.cbojar.net/">Blog</a>
+					</nav>
+				</div>
+			</header>
+		</div>
+
+		<section class="major-section" id="about">
+			<a class="return-top" data-scroll="true" href="#flag">&#8607; Top</a>
+			<h2>About</h2>
+
+			<p>I am many things, first and foremost. I have a professional life. I have a personal life. I enjoy all things technology. I am a software engineer by day, and by night. I enjoy reading and traveling. I am a husband to a beautiful and wonderful wife.</p>
+			<p>Professionally, I believe in improving the world through the application of the science and art of software development, with a constant eye to quality and economy. I am stubbornly committed to doing the right thing for people.</p>
+			<p>Personally, I believe the world is to be explored and life is to be lived. I seek knowledge and wisdom and experience, and share those gifts when I can.</p>
+
+			<a class="twitter badge" title="Twitter" rel="me" href="https://twitter.com/cbojar">Twitter</a>
+			<a class="stack-overflow badge" title="Stack Overflow" rel="me" href="http://stackexchange.com/users/1553571/cbojar">Stack Overflow</a>
+			<a class="medium badge" title="Medium" rel="me" href="https://medium.com/@cbojar">Medium</a>
+		</section>
+
+		<section class="major-section" id="updates">
+			<a class="return-top" data-scroll="true" href="#flag">&#8607; Top</a>
+			<h2>Updates</h2>
+			<iframe class="embed" src="feed.html"></iframe>
+
+			<h3>Reading List</h3>
+			<div id="reading-list">
+				<h3><a href="https://www.goodreads.com/review/list/43756106-chris?shelf=currently-reading">Currently Reading</a></h3>
+				<div id="gr_grid_widget_1602265775">
+					<div class="gr_grid_container">
+					</div>
+				</div>
+
+				<h3><a href="https://www.goodreads.com/review/list/43756106-chris?shelf=read">Bookshelf</a></h3>
+				<div id="gr_grid_widget_1601079771">
+					<div class="gr_grid_container">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="major-section" id="portfolio">
+			<a class="return-top" data-scroll="true" href="#flag">&#8607; Top</a>
+			<h2>Portfolio</h2>
+
+			<a class="linkedin badge" title="LinkedIn" rel="me" href="https://www.linkedin.com/in/cbojarski">LinkedIn</a>
+			<a class="github badge" title="GitHub" rel="me" href="https://github.com/cbojar/">GitHub</a>
+
+
+			<article class="project">
+				<h3>Guru</h3>
+				<section class="overview">
+					<h4>Overview</h4>
+					<p>Guru is a knowledge management system for teams. The goal of the software is for knowledge to find you. They have a web application, a Chrome extension, and a Slack integration. The application is written in Java with the Spring framework.</p>
+				</section>
+
+				<section class="contributions">
+					<h4>Contributions</h4>
+					<p>Not every team is ready to part with their old knowledge base software. I mainly work on the syncs and migrations feature, allowing customers to sync in data from other systems. They can see their knowledge in both places, and keep it up to date without manually updating twice.</p>
+					<p>I also contribute to the API and Developer Enablement projects. We are expanding support for our API, opening it up to more customers and adding more functionality. I am working on identifying areas to open up, and documenting the existing and new API functionality.</p>
+					<p>I participate in additional working groups beyond my main responsibilities. One group focuses on improving our own internal use of our application, organizing our accumulated engineering knowledge. I am working in another group to open up an apprenticeship role in our organization for the fall of 2020.</p>
+				</section>
+			</article>
+
+			<article class="project">
+				<h3>Thomson Reuters/Refinitiv</h3>
+				<section class="overview">
+					<h4>Overview</h4>
+					<p>The GoldTier/KYCaaS application is a large legacy application written in Java. It is used by banks and other large financial institutions to understand the risks of working with a given client, and of maintaining regulatory compliance with anti-money laundering laws. Users can work in a traditional Java Applet interface, or in a more modern Web interface. A servlet running in a container handles the immediate workloads, and a separate instance of the application handles deferred tasks. The application makes heavy use of a backing database, one of Oracle, Sybase, or SQL Server. Clients frequently request new features and integrations with third-party APIs. There are also ongoing efforts to fix bugs and modernize the platform.</p>
+				</section>
+
+				<section class="contributions">
+					<h4>Contributions</h4>
+					<p>I worked with a team to continue to develop the application, often working with and coordinating the efforts of other relevant teams and individuals. I fixed bugs and implemented features for database management, multithreading, I/O, and integration with other services. I wrote our current implementation of file encryption from scratch to meet GDPR compliance for personal information. It securely encrypts files on disk while transparently decrypting them when they are read. The implementation continues to support reading from files that are unencrypted and encrypted with a legacy algorithm in an equally transparent and modular manner.</p>
+					<p>I spearheaded the effort to write unit tests around legacy components. I set up the relevant tooling and standards, and presented a educational session on how to write good tests. With tests now in place, we are able to guard against regressions and bugs in an automated way.</p>
+					<p>After being frustrated with the laborious manual process of releasing, I wrote automation software to handle most of the tedious manual steps in a more consistent way. I then adapted it to be used as part of our Jenkins setup to automatically build and deploy the application to our local development and test servers. With the automation software, some of the responsibilities for release were shifted from my resource-constrained team. This reduced human error in the build process, and removed hours of work from my team, and allowed for other teams to work with latest code on a continuous basis.</p>
+					<p>I wrote out a long-term plan to re-imagine the architecture of the application in a more modern style. Working with the application architect, we are currently implementing this plan to move to a smaller, simpler, and faster application utilizing microservices and service orientation.</p>
+					<p>When acting in a team capacity, I provide mentorship and knowledge to junior members. I assist other team members when they run into problems with anything from code to servers to customers. I write documentation and provide training where needed to get fellow developers productive. I use personal agile processes where I can in an aglish-waterfally organizational structure to deliver quality code.</p>
+				</section>
+			</article>
+
+			<article class="project">
+				<h3><a href="https://www.invconcepts.com/">Innovative Concepts</a></h3>
+				<section class="images">
+					<h4>Images</h4>
+					<figure>
+						<a href="/images/innovative-concepts/home.png">
+							<img src="/images/innovative-concepts/home-thumb.png" alt="Innovative Concepts Home Page" />
+						</a>
+						<figcaption>Innovative Concepts Home Page</figcaption>
+					</figure>
+					<figure>
+						<a href="/images/innovative-concepts/home-mobile.png">
+							<img src="/images/innovative-concepts/home-mobile-thumb.png" alt="Home Page at Mobile Size" />
+						</a>
+						<figcaption>Home Page at Mobile Size</figcaption>
+					</figure>
+					<figure>
+						<a href="/images/innovative-concepts/jsunit-test.png">
+							<img src="/images/innovative-concepts/jsunit-test-thumb.png" alt="Custom Unit Testing Framework" />
+						</a>
+						<figcaption>Custom Unit Testing Framework</figcaption>
+					</figure>
+					<figure>
+						<a href="/images/innovative-concepts/agents-dashboard.png">
+							<img src="/images/innovative-concepts/agents-dashboard-thumb.png" alt="Agents Dashboard" />
+						</a>
+						<figcaption>Agents Dashboard</figcaption>
+					</figure>
+					<figure>
+						<a href="/images/innovative-concepts/set-appointment.png">
+							<img src="/images/innovative-concepts/set-appointment-thumb.png" alt="Appointment Form" />
+						</a>
+						<figcaption>Appointment Form</figcaption>
+					</figure>
+				</section>
+
+				<section class="overview">
+					<h4>Overview</h4>
+					<p>The Innovative Concepts website is an application written in classic ASP (JScript), composed of several parts. First, there is a basic content and templating system. This ensures a consistent look-and-feel across the entire site. Second, there is a custom CRM based on a custom, pseudo-MVC framework. This is used internally for tracking and managing prospect and partner relationships. It also provides partners the ability to add information and schedule appointments independently.</p>
+					<p>To support this system, several other supporting applications were written. A unit-testing framework, including a web interface, an XML interface, and a CLI interface, was written from scratch to support development. An interface to render data from Google Calendar was also written to support partner scheduling. Supporting applications were written in classic ASP (JScript), BASH, and Ruby.</p>
+					<p>The entire application is responsive, using modern CSS3 and HTML5.</p>
+				</section>
+
+				<section class="contributions">
+					<h4>Contributions</h4>
+					<p>I wrote this application completely from a green field. That includes the templating system, the pseudo-MVC framework, the custom unit-testing framework, the support applications, the Javascript, the CSS, and the HTML. I produced or procured the graphics used. The site has been through five different themes, all of which I designed. I completely refactored the application after five years of legacy code building up, including writing tests, reorganizing classes, and optimizing algorithms. I wrote and implemented the database schema. About the only thing I don't have a strong hand in is the website copy.</p>
+				</section>
+			</article>
+
+			<article class="project">
+				<h3><a href="http://thedrggroup.com/">The DRG Group</a></h3>
+				<section class="images">
+					<h4>Images</h4>
+					<figure>
+						<a href="/images/drggroup/home.png">
+							<img src="/images/drggroup/home-thumb.png" alt="DRG Group Home Page" />
+						</a>
+						<figcaption>DRG Group Home Page</figcaption>
+					</figure>
+
+					<figure>
+						<a href="/images/drggroup/biography.png">
+							<img src="/images/drggroup/biography-thumb.png" alt="Biography Page" />
+						</a>
+						<figcaption>Biography Page</figcaption>
+					</figure>
+				</section>
+
+				<section class="overview">
+					<h4>Overview</h4>
+					<p>From a technical standpoint, the needs of the DRG Group are fairly basic, fulfilled with a hosted Wordpress install. The goal here is to achieve a professional look with minimal maintenance. The key here is focusing on choosing the best look-and-feel, so as to produce the greatest impact.</p>
+				</section>
+
+				<section class="contributions">
+					<h4>Contributions</h4>
+					<p>A Wordpress installation does not need a lot beyond ensuring it is up to date. On the other hand, selecting the theme that conveys the right message is where energy is best spent. A bold, impactful headline communicates a strong sense of a large problem, while a clean, modern aesthetic offers both calm and focus.</p>
+				</section>
+			</article>
+		</section>
+
+		<!--section class="major-section" id="projects">
+			<a class="return-top" data-scroll="true" href="#flag">&#8607; Top</a>
+			<h2>Projects</h2>
+		</section -->
+
+		<footer>
+			&copy; 2008-2020 CBojar. |
+			Background <a href="https://creativecommons.org/licenses/by/4.0/">CC-By</a> <a href="http://vector4free.com/vector/geometric-colorful-abstract-background-vector/">Vector Beast</a> |
+			Social Icons from <a href="https://dribbble.com/shots/1427054-Flat-Minimalistic-Social-Icons">Lee Gargano</a>
+		</footer>
+		<script src="https://www.goodreads.com/review/grid_widget/43756106.Chris's%20currently-reading%20book%20montage?cover_size=medium&hide_link=true&hide_title=true&num_books=200&order=a&shelf=currently-reading&sort=date_added&widget_id=1602265775" type="text/javascript" charset="utf-8"></script>
+		<script src="https://www.goodreads.com/review/grid_widget/43756106.Chris's%20Read Books?cover_size=medium&num_books=200&order=d&hide_link=true&hide_title=true&shelf=read&sort=date_read&widget_id=1601079771" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

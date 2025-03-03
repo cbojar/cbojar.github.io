@@ -1,0 +1,284 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+body {
+	background-image: url('/images/background.svg');
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Droid Sans, sans-serif;
+}
+
+code,
+kbd,
+samp {
+	font-family: monospace;
+	border: 1px solid #ccc;
+	background-color: #ddd;
+	border-radius: 4px;
+	padding: 0 2px;
+}
+
+#flag {
+	position: relative;
+	height: 100vh;
+	margin: 0 32px 0;
+	padding: 0;
+	width: auto;
+}
+
+#flag header {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 16px;
+	width: 100%;
+}
+
+#flag header #cityscape {
+	margin: 0;
+	padding: 0;
+	float: right;
+	max-width: 100%;
+}
+
+#flag header .white-block {
+	background-color: #e5e5e5;
+	color: #333;
+	margin: 0;
+	padding: 16px;
+	text-align: left;
+	clear: both;
+	overflow: auto;
+}
+
+#flag header h1 {
+	margin: 0;
+	padding: 0;
+	float: right;
+	max-width: 100%;
+}
+
+#flag header #title-image {
+	max-height: 51px;
+	max-width: 100%;
+}
+
+#flag header nav {
+	display: block;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	float: left;
+	overflow: show;
+}
+
+#flag header nav a {
+	float: left;
+	height: 59px;
+	line-height: 39px;
+	font-size: 24px;
+	margin: 0 8px;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #333;
+	background-color: transparent;
+	transition: color 500ms, background-color 500ms;
+}
+
+#flag header nav a:active,
+#flag header nav a:hover {
+	background-color: #333;
+	color: #e5e5e5;
+}
+
+.major-section,
+footer {
+	background-color: #e5e5e5;
+	color: #333;
+	margin: 64px 32px 0;
+	padding: 32px;
+	width: auto;
+}
+
+#flag + .major-section {
+	margin-top: 48px;
+}
+
+.major-section h2 {
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+.major-section .return-top {
+	float: right;
+}
+
+.project {
+	margin: 16px 0px;
+	padding: 0;
+	border-bottom: 1px solid #cfcfcf;
+	clear: both;
+	overflow: auto;
+}
+
+.project:last-of-type {
+	border-bottom: none;
+}
+
+.project figure {
+	display: inline-block;
+	border: 1px solid #cfcfcf;
+	margin: 4px 8px 4px 0;
+	padding: 8px;
+	width: 258px;
+	max-width: 100%;
+}
+
+/*
+ * Project thumbnails should be 240x135
+ */
+.project figure img {
+	display: block;
+	max-width: 100%;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.project figure figcaption {
+	display: block;
+	border: none;
+	margin: 4px 0 0;
+	padding: 0;
+	max-width: 100%;
+	font-size: smaller;
+	font-weight: bolder;
+}
+
+#reading-list {
+	display: block;
+	border: none;
+	width: 100%;
+	height: 480px;
+	overflow: auto;
+	margin: 16px 0;
+}
+
+#reading-list .gr_grid_container {
+	width: 100%;
+}
+
+#reading-list .gr_grid_book_container {
+	display: inline-block;
+	width: 98px;
+	height: 160px;
+	padding: 0;
+}
+
+.embed {
+	display: block;
+	width: 100%;
+	border: none;
+}
+
+.badge {
+	font-size: 0;
+	line-height: 0;
+	text-shadow: none;
+	color: transparent;
+
+	display: inline-block;
+	vertical-align: middle;
+	width: 64px;
+	height: 64px;
+	margin: 0;
+	padding: 0;
+
+	background-image: url('/images/social-sprite.png');
+	background-repeat: no-repeat;
+}
+
+.badge.rss {
+	background-position: 0 0;
+}
+.badge.youtube {
+	background-position: -64px -192px;
+}
+.badge.medium {
+	background-position: -64px -128px;
+}
+.badge.linkedin {
+	background-position: 0 -128px;
+}
+.badge.twitter {
+	background-position: 0 -64px;
+}
+.badge.reddit {
+	background-position: 0 -256px;
+}
+.badge.stack-overflow {
+	background-position: -64px -64px;
+}
+.badge.github {
+	background-position: 0 -192px;
+}
+.badge.pinterest {
+	background-position: -64px 0;
+}
+
+footer {
+	text-align: center;
+	font-size: smaller;
+}
+
+@media (max-width: 479px) {
+	html,
+	body {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	#flag,
+	.major-section,
+	footer {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#reading-list {
+		display: block;
+		width: 100%;
+		margin: 8px 4px;
+	}
+
+	.major-section,
+	footer {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.project figure {
+		display: block;
+	}
+}
